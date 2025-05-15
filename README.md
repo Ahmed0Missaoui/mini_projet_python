@@ -1,35 +1,66 @@
 # Student Management System
 
-A comprehensive student management system with multiple components:
+[![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.2.0-green)](https://spring.io/)
+[![FastAPI](https://img.shields.io/badge/FastAPI-0.110.0-blue)](https://fastapi.tiangolo.com/)
+[![React](https://img.shields.io/badge/Next.js-14.1.0-blue)](https://nextjs.org/)
+[![Angular](https://img.shields.io/badge/Angular-17.0.0-red)](https://angular.io/)
 
-## Key Components
+A full-stack student management system with microservices architecture, combining Spring Boot and FastAPI backends with modern frontend frameworks.
 
-### Backend
-- **Spring Boot Microservice**: Manages student data, courses, departments, and bookmarks
-- **FastAPI Backend**: Handles book recommendations and AI-generated book summaries
-- **MongoDB**: Stores student profiles, courses, departments, and bookmarks
-- **PostgreSQL**: Stores book recommendation data
-- **Redis**: Caches frequently accessed data for performance optimization
+## 📋 Features
 
-### Frontend
-- **NextJS**: Student portal for registration, course enrollment, profile management, and bookmarks
-- **Angular**: Admin dashboard for managing students, courses, and viewing statistics
+### Student Features
+- 🧑🎓 Student registration & JWT authentication
+- 📚 Course enrollment and management
+- 🔖 Bookmark system for courses/materials
+- 🤖 AI-generated book summaries (Groq LLM)
+- 🔍 Advanced book recommendations
 
-## Features
+### Admin Features
+- 📊 Dashboard with real-time statistics
+- 🏫 Department management
+- 📈 Student performance analytics
+- 🛠️ System configuration
+- 📦 Bulk data operations
 
-- Student registration and authentication
-- Course enrollment and management
-- Department organization
-- Bookmarking system for courses and learning materials
-- Book recommendations with filtering by category and price
-- AI-generated book summaries
-- Admin dashboard with statistics
-- Responsive UI for all device sizes
+## 🛠️ Tech Stack
 
-## Tech Stack
+| Category       | Technologies                                                                 |
+|----------------|------------------------------------------------------------------------------|
+| **Frontend**   | Next.js (React), Angular, TypeScript, Tailwind CSS, Chart.js                 |
+| **Backend**    | Spring Boot (Java 17), FastAPI (Python 3.11), Groq SDK                      |
+| **Databases**  | MongoDB (Student Data), PostgreSQL (Book Recommendations), Redis (Caching) |
+| **DevOps**     | Docker, GitHub Actions, Prometheus, Grafana                                  |
+| **APIs**       | Swagger/OpenAPI, REST, WebSocket                                             |
 
-- **Frontend**: Next.js (React), TypeScript, Tailwind CSS
-- **Backend**: Spring Boot, FastAPI
-- **Databases**: MongoDB, PostgreSQL
-- **Caching**: Redis
-- **Other**: Groq LLM API for book summaries
+## 🚀 Getting Started
+
+### Prerequisites
+- Docker 24.0+ & Docker Compose 2.20+
+- Node.js 18.x+
+- Java 17 JDK
+- Python 3.11
+
+### Installation
+```bash
+# Clone repository
+git clone https://github.com/your-repo/student-management-system.git
+cd student-management-system
+
+# Set up environment variables
+cp .env.example .env
+
+# Build and start containers
+docker compose up --build -d
+
+
+🌐 API Documentation
+Spring Boot: http://localhost:8080/swagger-ui.html
+
+FastAPI: http://localhost:8000/docs
+
+🖥️ Frontend Access
+Student Portal (Next.js): http://localhost:3000
+
+Admin Dashboard (Angular): http://localhost:4200
+

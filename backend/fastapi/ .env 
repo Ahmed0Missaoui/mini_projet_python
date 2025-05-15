@@ -1,0 +1,2 @@
+DATABASE_URL=postgresql://postgres:password@postgres:5432/bookdb
+GROQ_API_KEY=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
